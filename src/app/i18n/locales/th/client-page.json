@@ -1,0 +1,7 @@
+{
+    "title": "หน้า Client",
+    "counter_one": "ถูกเลือกมา 1",
+    "counter_other": "ถูกเลือกมา {{count}}",
+    "counter_zero": "ไม่ถูกเลือก",
+    "back-to-home": "กลับหน้าแรก"
+}
