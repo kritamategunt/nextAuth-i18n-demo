@@ -4,8 +4,18 @@
 import { useSession } from 'next-auth/react'
 import { redirect } from 'next/navigation'
 import UserCard from '../components/UserCard'
+import { useTranslation } from '@/app/i18n/client';
 
-export default function ClientPage() {
+export default function ClientPage({
+    params: { lng },
+}: {
+    params: {
+        lng: string;
+    };
+}) {
+
+
+    const { t } = useTranslation(lng, "client-page");
 
     const { data: session } = useSession({
         required: true,
@@ -26,6 +36,7 @@ export default function ClientPage() {
     return (
         <section className="flex flex-col gap-6">
             <UserCard user={session?.user} pagetype={"Client"} />
+            <h1>{t('title')}</h1>
         </section>
     )
 }

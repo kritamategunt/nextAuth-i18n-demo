@@ -30,6 +30,7 @@ export default function RootLayout({
   console.log(lng)
   return (
     <html lang={lng} dir={dir(lng)}>
+      <head/>
       <body className={inter.className}>
         <AuthProvider>
           <Navbar params={lng} />

@@ -15,9 +15,9 @@ export default async function Navbar({
                 <li><Link href="/api/auth/signin">Sign In</Link></li>
                 <li><Link href="/api/auth/signout">Sign Out</Link></li>
                 {/* <li><Link href="/server">Server</Link></li> */}
-                <li><Link href="/client">Client</Link></li>
+                <li><Link href={`/${lng}/client`}>Client</Link></li>
                 <li><Link href="/extra">Extra</Link></li>
-                <li><Link href="/client-page">test i18n</Link></li>
+                <li><Link href={`/${lng}/client-page`}>test i18n</Link></li>
                 <Footer lng={lng} />
             </ul>
         </nav>
