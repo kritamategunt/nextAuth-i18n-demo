@@ -65,6 +65,10 @@ export const options: NextAuthOptions = {
            */
           }),
     ],
+
+    pages:{
+        signIn: "/auth/signIn"
+    },
     
     callbacks:{
         //Ref: https://authjs.dev/guides/basics/role-based-access-control
