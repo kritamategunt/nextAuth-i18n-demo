@@ -44,9 +44,9 @@ const ContentSignIn: React.FC<Props> = ({ params: { lng } }) => {
           alignItems={'center'}
           display={'flex'}
           height={'100vh'}
-          sx={{
-            background: 'linear-gradient(#074E9F, #19408b 60%, #172f73)'
-          }}
+        //   sx={{
+        //     background: 'linear-gradient(#074E9F, #19408b 60%, #172f73)'
+        //   }}
         >
           <Grid rowSpacing={2} textAlign={'center'}>
             <Card

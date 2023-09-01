@@ -30,10 +30,10 @@ export default function RootLayout({
   console.log(lng)
   return (
     <html lang={lng} dir={dir(lng)}>
-      <head/>
+      <head />
       <body className={inter.className}>
         <AuthProvider>
-          <Navbar params={lng} />
+          <Navbar params={{ lng: lng }} />
           <main className="flex justify-center items-start p-6 min-h-screen">
             {children}
 

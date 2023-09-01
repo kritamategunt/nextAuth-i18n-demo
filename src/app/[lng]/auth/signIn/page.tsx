@@ -13,7 +13,7 @@ export default function signIn({
     return (
         <>
            
-            <ContentSignIn params={lng.toString()}/>
+            <ContentSignIn params={{lng: lng}}/>
         </>
 
 
